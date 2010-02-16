@@ -1,0 +1,7 @@
+{% spaceless %}
+    {% if render_obj.get_absolute_url %}
+        <a href="{{ render_obj.get_absolute_url }}">{{ render_obj }}</a>
+    {% else %}
+        {{ render_obj }}
+    {% endif %}
+{% endspaceless %}
